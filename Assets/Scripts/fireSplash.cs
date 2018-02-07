@@ -13,18 +13,8 @@ public class fireSplash : MonoBehaviour
         wait = 0;
         StartCoroutine("LaserFire");
     }
-    void Update()
 
-    {
-        if (waitTime = true)
-        {
-            wait = wait + 1 * Time.deltaTime;
-        }
-        if (wait >= 12)
-        {
-            waitTime = false;
-        }
-    }
+
 
     IEnumerator LaserFire()
     {
