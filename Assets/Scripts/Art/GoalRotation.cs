@@ -5,26 +5,25 @@ using UnityEngine;
 public class GoalRotation : MonoBehaviour
 {
     public bool activated;
-	// Use this for initialization
-	void Start ()
+    public Animator goalAnim;
+    public ParticleSystem particle;
+    public GameObject particleSystem;
+    // Use this for initialization
+    void Start ()
     {
-        activated = false;	
-	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-	if (activated == true)
-        {
-            transform.Rotate(0, 0, 2);
-        }
+        activated = false;
+        particle.Stop(true);
 	}
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Laser")
         {
-            activated = true; 
+            activated = true;
+            goalAnim.SetBool("Inters", true);
+            if (!particle.isPlaying)
+                particle.Play(true);
+            // particle.Play();
         }
     }
 }

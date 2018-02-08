@@ -13,8 +13,9 @@ public class Goal : MonoBehaviour
     {
         
         // grabs score manager script
-        scoreHolder = GameObject.Find("ScoreManager");
-        ScoreManager s = scoreHolder.GetComponent<ScoreManager>();
+
+        //scoreHolder = GameObject.Find("ScoreManager");
+        // ScoreManager s = scoreHolder.GetComponent<ScoreManager>();
 
         // grabs particle system
         //particle = GameObject.Find("VfxBoltLighting");

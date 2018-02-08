@@ -4,23 +4,33 @@ using UnityEngine;
 
 public class fireSplash : MonoBehaviour
 {
-    public bool waitTime;
+    public bool waitTimeR;
+    public bool waitTimeL;
     public float wait;
 
     void Start()
     {
-        waitTime = true;
         wait = 0;
-        StartCoroutine("LaserFire");
+        StartCoroutine("LaserFireR");
+        StartCoroutine("LaserFireL");
     }
 
 
 
-    IEnumerator LaserFire()
+    IEnumerator LaserFireR()
     {
-        while (waitTime == true && wait <= 12)
+        while (waitTimeR == true)
         {
             transform.Translate(Time.deltaTime, 0, 0, Space.World);
+
+            yield return null;
+        }
+    }
+    IEnumerator LaserFireL()
+    {
+        while (waitTimeL == true)
+        {
+            transform.Translate(-Time.deltaTime, 0, 0, Space.World);
 
             yield return null;
         }
