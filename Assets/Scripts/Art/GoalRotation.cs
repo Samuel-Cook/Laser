@@ -7,12 +7,11 @@ public class GoalRotation : MonoBehaviour
     public bool activated;
     public Animator goalAnim;
     public ParticleSystem particle;
-    public GameObject particleSystem;
+    //public GameObject particleSystem;
     // Use this for initialization
     void Start ()
     {
         activated = false;
-        particle.Stop(true);
 	}
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -21,9 +20,15 @@ public class GoalRotation : MonoBehaviour
         {
             activated = true;
             goalAnim.SetBool("Inters", true);
-            if (!particle.isPlaying)
-                particle.Play(true);
+
+            StartCoroutine("Lightning");
             // particle.Play();
         }
+    }
+    IEnumerator Lightning()
+    {
+        yield return new WaitForSeconds(.5f);
+        particle.Emit(1);
+        yield return null;
     }
 }

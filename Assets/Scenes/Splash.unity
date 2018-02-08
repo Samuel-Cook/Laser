@@ -1445,28 +1445,11 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 400008, guid: b31e5078e81decb4f92b1e248c4160c9, type: 2}
   m_PrefabInternal: {fileID: 1789928770}
---- !u!198 &1457992549 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 198880988432381976, guid: 04a7608740129644093866face2867cf,
-    type: 2}
-  m_PrefabInternal: {fileID: 2015958440}
 --- !u!1 &1462109073 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1610027086981778, guid: 04a7608740129644093866face2867cf,
     type: 2}
   m_PrefabInternal: {fileID: 2015958440}
---- !u!114 &1462109077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1462109073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1382626553be8b74c9231e950e643aca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cunt: {fileID: 1457992549}
 --- !u!61 &1462109078
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1918,6 +1901,36 @@ Prefab:
         type: 2}
       propertyPath: m_SortingOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 61063347814288930, guid: 04a7608740129644093866face2867cf,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 2.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 61063347814288930, guid: 04a7608740129644093866face2867cf,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 2.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 61266373562400364, guid: 04a7608740129644093866face2867cf,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 11.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 61266373562400364, guid: 04a7608740129644093866face2867cf,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 61266373562400364, guid: 04a7608740129644093866face2867cf,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 11.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 61266373562400364, guid: 04a7608740129644093866face2867cf,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 31.87
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 04a7608740129644093866face2867cf, type: 2}
