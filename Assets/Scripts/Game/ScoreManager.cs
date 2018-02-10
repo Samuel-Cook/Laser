@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class ScoreManager : MonoBehaviour
     public bool gameStarted;
     public Animator failWidget;
     public GameObject SwitchC;
-    public Text levelName;
+    public TextMeshProUGUI levelName;
 
     // Use this for initialization
     void Start()
@@ -26,12 +27,10 @@ public class ScoreManager : MonoBehaviour
         SwitchC = GameObject.Find("SwitchC");
         Switch s = SwitchC.GetComponent<Switch>();
 
-        levelName = GameObject.Find("levelNames").GetComponent<Text>();
-
         scoreTotal = 0;
         tapTotal = 0;
         gameStarted = true;
-        levelName.text = "Level: " + SceneManager.GetActiveScene().buildIndex;
+        levelName.SetText ("Level: " + SceneManager.GetActiveScene().buildIndex);
                 
     if (Time.timeScale != 1) // is paused?
         {

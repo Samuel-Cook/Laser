@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 61063347814288930}
   - component: {fileID: 50800463447649064}
   - component: {fileID: 95719405848832552}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoalArt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 4318887415343288}
   - component: {fileID: 198637269877372522}
   - component: {fileID: 199379468110540916}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PartSparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 4044481945493060}
   - component: {fileID: 198880988432381976}
   - component: {fileID: 199150830543371248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PartTesla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 4063712971467020}
   - component: {fileID: 198183414528007074}
   - component: {fileID: 199153737800188470}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PartSpots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 4575488676838058}
   - component: {fileID: 198650589743047546}
   - component: {fileID: 199162614928450620}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: VfxBoltLightning
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 114910652393830974}
   - component: {fileID: 61266373562400364}
   - component: {fileID: 50194783433531282}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Goal
   m_TagString: Goal
   m_Icon: {fileID: 0}
@@ -150,9 +150,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1069906445102426}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8, y: 31.8, z: 0}
-  m_LocalScale: {x: 2.4362621, y: 2.4362612, z: 2.4362612}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.9634649, y: 0.6746636, z: 0}
+  m_LocalScale: {x: 2.4362624, y: 2.4362612, z: 2.4362612}
   m_Children:
   - {fileID: 4575488676838058}
   m_Father: {fileID: 4772715345365988}
@@ -193,7 +193,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1666343969805888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.054626703, y: -2.167946, z: 0}
+  m_LocalPosition: {x: 2.44, y: -2.58, z: 0}
   m_LocalScale: {x: 0.06875427, y: 0.06875427, z: 0.6875427}
   m_Children:
   - {fileID: 4105817949670276}
@@ -263,7 +263,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.48, y: 7.6}
+  m_Size: {x: 4.88, y: 4.91}
   m_EdgeRadius: 0
 --- !u!61 &61266373562400364
 BoxCollider2D:
@@ -277,7 +277,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.84, y: 32.41}
+  m_Offset: {x: 0.8, y: 0.51}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -288,7 +288,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 12.8, y: 13.14}
+  m_Size: {x: 11.6, y: 11.6}
   m_EdgeRadius: 0
 --- !u!95 &95719405848832552
 Animator:
@@ -393,7 +393,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 493750724
+  randomSeed: -2043416822
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -6931,7 +6931,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -633665198
+  randomSeed: 661533821
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -7360,7 +7360,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 3.2993534
       mode: 0
       spread: 0
       speed:
@@ -13589,7 +13589,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
