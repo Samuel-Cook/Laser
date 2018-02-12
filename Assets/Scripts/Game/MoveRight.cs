@@ -7,6 +7,7 @@ public class MoveRight : MonoBehaviour
     public GameObject laserPrefabVerticalU;
     public GameObject laserPrefabVerticalD;
     public GameObject SwitchC;
+    public GameObject scoreHolder;
     public bool GoRight;
 
     // Use this for initialization
@@ -15,8 +16,14 @@ public class MoveRight : MonoBehaviour
         GoRight = true;
         laserPrefabVerticalU = (GameObject)(Resources.Load("Vertical/Laser Vertical U"));
         laserPrefabVerticalD = (GameObject)(Resources.Load("Vertical/Laser Vertical D"));
+
         SwitchC = GameObject.Find("SwitchC");
         Switch s = SwitchC.GetComponent<Switch>();
+
+        // grabs scoreholder script
+        scoreHolder = GameObject.Find("ScoreManager");
+        ScoreManager t = scoreHolder.GetComponent<ScoreManager>();
+
         StartCoroutine("LaserHorizontal");
 
     }
@@ -54,7 +61,7 @@ public class MoveRight : MonoBehaviour
 // Update is called once per frame
 void Update()
     {
-        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1)
+        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && playSpace.clicked == true && ScoreManager.maxTaps >= 0)
         {
             StopCoroutine("LaserHorizontal");
             StartCoroutine("SpawnNewLaserVertical");

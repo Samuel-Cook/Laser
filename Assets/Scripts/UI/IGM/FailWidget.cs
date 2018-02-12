@@ -24,4 +24,12 @@ public class FailWidget : MonoBehaviour {
     {
         SceneManager.LoadScene(level);
     }
+    public void Splash()
+    {
+        SceneManager.LoadScene("Splash");
+    }
+    public void LevelSelect ()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }

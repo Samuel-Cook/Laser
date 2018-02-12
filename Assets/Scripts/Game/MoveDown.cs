@@ -6,6 +6,7 @@ public class MoveDown : MonoBehaviour
 {
     public GameObject laserPrefabHorizontalR;
     public GameObject laserPrefabHorizontalL;
+    public GameObject scoreHolder;
     public GameObject SwitchC;
 
     // Use this for initialization
@@ -13,8 +14,14 @@ public class MoveDown : MonoBehaviour
     {
         laserPrefabHorizontalR = (GameObject)(Resources.Load("Horizontal/Laser Horizontal R"));
         laserPrefabHorizontalL = (GameObject)(Resources.Load("Horizontal/Laser Horizontal L"));
+
         SwitchC = GameObject.Find("SwitchC");
         Switch s = SwitchC.GetComponent<Switch>();
+        
+        // grabs scoreholder script
+        scoreHolder = GameObject.Find("ScoreManager");
+        ScoreManager t = scoreHolder.GetComponent<ScoreManager>();
+
         StartCoroutine("FireLaserDown");
     }
 
@@ -51,7 +58,7 @@ public class MoveDown : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1)
+        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && playSpace.clicked == true && ScoreManager.maxTaps >= 0)
         {
             StopCoroutine("FireLaserDown");
             StartCoroutine("SpawnNewLaserHorizontal");

@@ -68,7 +68,7 @@ public class MoveUp : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && playSpace.clicked == true)
+        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && playSpace.clicked == true && ScoreManager.maxTaps >=0)
         {
            // StopCoroutine("FireLaserUp");
 
