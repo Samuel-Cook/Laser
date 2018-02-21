@@ -5,31 +5,59 @@ using UnityEngine.SceneManagement;
 
 public class FailWidget : MonoBehaviour {
 
-    // Use this for initialization
-    void Start() {
-
-    }
-
-    // Update is called once per frame
-    void Update() {
-
-    }
 
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        StartCoroutine("RestartScene");
     }
 
-    public void Continue(int level)
+    public void Continue()
     {
-        SceneManager.LoadScene(level);
+        StartCoroutine("ContinueScene");
     }
     public void Splash()
     {
-        SceneManager.LoadScene("Splash");
+        StartCoroutine("SplashScreen");
     }
     public void LevelSelect ()
     {
-        SceneManager.LoadScene("Menu");
+        StartCoroutine("LevelSelector");
+    }
+    IEnumerator RestartScene()
+    {
+        {
+            float fadeTime = GameObject.Find("AudioManager").GetComponent<fade>().BeginFade(1);
+            yield return new WaitForSeconds(fadeTime);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+      //  yield return null;
+    }
+    IEnumerator ContinueScene()
+    {
+        {
+            float fadeTime = GameObject.Find("AudioManager").GetComponent<fade>().BeginFade(1);
+            yield return new WaitForSeconds(fadeTime);
+            SceneManager.LoadScene("Menu");
+        }
+       // yield return null;
+    }
+    IEnumerator SplashScreen()
+    {
+        {
+            float fadeTime = GameObject.Find("AudioManager").GetComponent<fade>().BeginFade(1);
+            yield return new WaitForSeconds(fadeTime);
+            SceneManager.LoadScene("Splash");
+        }
+       // yield return null;
+    }
+    IEnumerator LevelSelector()
+    {
+        {
+            float fadeTime = GameObject.Find("AudioManager").GetComponent<fade>().BeginFade(1);
+            yield return new WaitForSeconds(fadeTime);
+            SceneManager.LoadScene("Menu");
+
+           // yield return null;
+        }
     }
 }

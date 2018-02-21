@@ -13,6 +13,8 @@ public class PuzzleSolutions : MonoBehaviour
 
     public Animator Complete;
 
+    public AudioSource completeSFX;
+
     void Start()
     {
         scoreHolder = GameObject.Find("ScoreManager");
@@ -51,9 +53,10 @@ public class PuzzleSolutions : MonoBehaviour
     IEnumerator PauseGame()
     {
         {
-            
+            //completeSFX.Play();
             yield return new WaitForSeconds(2.2f);
-            Time.timeScale = 0;
+            completeSFX.Play();
+            //Time.timeScale = 0;
         }
         // function in switch script..
     }

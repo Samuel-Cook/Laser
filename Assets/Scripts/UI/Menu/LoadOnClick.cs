@@ -7,7 +7,16 @@ public class LoadOnClick : MonoBehaviour
 {
     public void LoadScene(int level)
     {
-        SceneManager.LoadScene(level);
+        StartCoroutine("LoadScenef", level);
+    }
+    IEnumerator LoadScenef(int level)
+    {
+        {
+            float fadeTime = GameObject.Find("AudioManager").GetComponent<fade>().BeginFade(1);
+            yield return new WaitForSeconds(fadeTime);
+            SceneManager.LoadScene(level);
+        }
+        yield return null;
     }
 
 }

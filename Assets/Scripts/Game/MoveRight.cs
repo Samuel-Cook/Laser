@@ -61,7 +61,7 @@ public class MoveRight : MonoBehaviour
 // Update is called once per frame
 void Update()
     {
-        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && playSpace.clicked == true && ScoreManager.maxTaps >= 0)
+        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && playSpace.clicked == true && ScoreManager.maxTaps >= 1)
         {
             StopCoroutine("LaserHorizontal");
             StartCoroutine("SpawnNewLaserVertical");

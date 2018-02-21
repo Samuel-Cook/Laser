@@ -19,6 +19,7 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public static int maxTaps;
     public int Taps;
+    public AudioSource Failsfx;
 
     // Use this for initialization
     void Start()
@@ -50,7 +51,7 @@ public class ScoreManager : MonoBehaviour
         tapText.SetText("Taps: " + maxTaps);
 
 
-        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && playSpace.clicked == true && gameStarted == true && maxTaps != 0)
+        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && playSpace.clicked == true && gameStarted == true && maxTaps >= 1)
         {
             maxTaps--;
         }
@@ -64,6 +65,7 @@ public class ScoreManager : MonoBehaviour
         if (Switch.laserCount == 0 && gameStarted == true)
         {
             failWidget.SetBool("fail", true);
+            Failsfx.Play();
             gameStarted = false;
           //  Time.timeScale = 0; //pause game
 

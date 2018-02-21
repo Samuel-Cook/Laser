@@ -17,15 +17,63 @@ public class splashButtons : MonoBehaviour {
 
     public void LoadLevelSelect ()
     {
-        SceneManager.LoadScene("Menu");
+        StartCoroutine("LevelSelector");
+    }
+
+    public void Mute()
+    {
+        StartCoroutine("MuteGame");
     }
 
     public void Quit ()
     {
-        Application.Quit();
+        StartCoroutine("QuitGame");
     }
     public void MainMenu ()
     {
-        SceneManager.LoadScene(0);
+        StartCoroutine("LoadMenu");
+    }
+
+    IEnumerator LoadMenu()
+    {
+        {
+            float fadeTime = GameObject.Find("AudioManager").GetComponent<fade>().BeginFade(1);
+            yield return new WaitForSeconds(fadeTime);
+            SceneManager.LoadScene(0);
+        }
+    }
+
+    IEnumerator LevelSelector()
+    {
+        {
+            float fadeTime = GameObject.Find("AudioManager").GetComponent<fade>().BeginFade(1);
+            yield return new WaitForSeconds(fadeTime);
+            SceneManager.LoadScene("Menu");
+        }
+    }
+
+    IEnumerator QuitGame()
+    {
+        {
+            float fadeTime = GameObject.Find("AudioManager").GetComponent<fade>().BeginFade(1);
+            yield return new WaitForSeconds(fadeTime);
+            Application.Quit();
+        }
+    }
+    IEnumerator MuteGame()
+    {
+        {
+            if (AudioListener.pause == false)
+            {
+                AudioListener.pause = true;
+            }
+            else if (AudioListener.pause == true)
+            {
+                AudioListener.pause = false;
+
+            }
+            yield return null;
+        }
+
     }
 }

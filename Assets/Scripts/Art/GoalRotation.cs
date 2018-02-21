@@ -7,6 +7,7 @@ public class GoalRotation : MonoBehaviour
     public bool activated;
     public Animator goalAnim;
     public ParticleSystem particle;
+    public AudioSource Audio;
     //public GameObject particleSystem;
     // Use this for initialization
     void Start ()
@@ -29,6 +30,7 @@ public class GoalRotation : MonoBehaviour
     {
         yield return new WaitForSeconds(.5f);
         particle.Emit(1);
+        Audio.Play();
         yield return null;
     }
 }
