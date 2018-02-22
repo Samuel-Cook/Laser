@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 61063347814288930}
   - component: {fileID: 50800463447649064}
   - component: {fileID: 95719405848832552}
-  - component: {fileID: 82139251398127442}
   m_Layer: 8
   m_Name: GoalArt
   m_TagString: Untagged
@@ -45,6 +44,22 @@ GameObject:
   m_Layer: 8
   m_Name: PartSparks
   m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1087595368073340
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4068530326304490}
+  - component: {fileID: 82523680114842858}
+  m_Layer: 0
+  m_Name: GoalSound
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,6 +160,19 @@ Transform:
   m_Father: {fileID: 4575488676838058}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4068530326304490
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1087595368073340}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.1936355, y: 1.1697922, z: -1.446467}
+  m_LocalScale: {x: 5.9700265, y: 5.9700294, z: 0.5970029}
+  m_Children: []
+  m_Father: {fileID: 4105817949670276}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4105817949670276
 Transform:
   m_ObjectHideFlags: 1
@@ -152,10 +180,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1069906445102426}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.9634649, y: 0.6746636, z: 0}
+  m_LocalPosition: {x: -2, y: 0.6746636, z: 0}
   m_LocalScale: {x: 2.4362624, y: 2.4362612, z: 2.4362612}
   m_Children:
   - {fileID: 4575488676838058}
+  - {fileID: 4068530326304490}
   m_Father: {fileID: 4772715345365988}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -194,7 +223,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1666343969805888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.57, y: -2.51, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.06875427, y: 0.06875427, z: 0.6875427}
   m_Children:
   - {fileID: 4105817949670276}
@@ -291,19 +320,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 11.6, y: 11.6}
   m_EdgeRadius: 0
---- !u!82 &82139251398127442
+--- !u!82 &82523680114842858
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1069906445102426}
+  m_GameObject: {fileID: 1087595368073340}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4e1ff8faed12a475eba9be0e46072269, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.42
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -358,7 +387,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -402,7 +431,7 @@ MonoBehaviour:
   activated: 0
   goalAnim: {fileID: 95719405848832552}
   particle: {fileID: 198650589743047546}
-  Audio: {fileID: 82139251398127442}
+  Audio: {fileID: 82523680114842858}
 --- !u!114 &114910652393830974
 MonoBehaviour:
   m_ObjectHideFlags: 1
