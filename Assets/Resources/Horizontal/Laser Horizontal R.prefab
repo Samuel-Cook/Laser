@@ -23,9 +23,9 @@ GameObject:
   - component: {fileID: 114895422254446772}
   - component: {fileID: 50620797992225914}
   - component: {fileID: 61513595979363672}
-  - component: {fileID: 199927783999666222}
-  - component: {fileID: 198490382479126592}
   - component: {fileID: 82629111247392092}
+  - component: {fileID: 198555930338310790}
+  - component: {fileID: 199870825736074332}
   m_Layer: 0
   m_Name: Laser Horizontal R
   m_TagString: Laser
@@ -39,13 +39,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1281294249445666}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -2.7964964, y: -6.687947, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.5965786, y: -2.725303, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &50620797992225914
 Rigidbody2D:
   serializedVersion: 4
@@ -80,16 +80,16 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.04, y: 0.09}
   m_EdgeRadius: 0
 --- !u!82 &82629111247392092
 AudioSource:
@@ -276,7 +276,7 @@ MonoBehaviour:
   GoLeft: 0
   effect: {fileID: 0}
   Saudio: {fileID: 0}
---- !u!198 &198490382479126592
+--- !u!198 &198555930338310790
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -336,7 +336,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -480737251
+  randomSeed: 483391166
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3578,7 +3578,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!199 &199927783999666222
+--- !u!199 &199870825736074332
 ParticleSystemRenderer:
   serializedVersion: 4
   m_ObjectHideFlags: 1

@@ -9,78 +9,114 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1642975450171432}
+  m_RootGameObject: {fileID: 1986332607187850}
   m_IsPrefabParent: 1
---- !u!1 &1620975767484774
+--- !u!1 &1626125661597438
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4041845961482872}
-  - component: {fileID: 82860046322359814}
+  - component: {fileID: 4848442327130404}
+  - component: {fileID: 82951397573856008}
   m_Layer: 0
-  m_Name: SoundsComplete
+  m_Name: SoundsFail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1642975450171432
+--- !u!1 &1986332607187850
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4194916183132024}
-  - component: {fileID: 114405518893186602}
+  - component: {fileID: 4920352004983128}
+  - component: {fileID: 23995133139598226}
+  - component: {fileID: 114758240610629192}
+  - component: {fileID: 114826838232548340}
   m_Layer: 0
-  m_Name: PuzzleSol
+  m_Name: ScoreManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4041845961482872
+--- !u!4 &4848442327130404
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1620975767484774}
+  m_GameObject: {fileID: 1626125661597438}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.84706515, y: -0.0655208, z: -2.1363268}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 4.9374413, y: 20.605099, z: -2.2899203}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
-  m_Father: {fileID: 4194916183132024}
+  m_Father: {fileID: 4920352004983128}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4194916183132024
+--- !u!4 &4920352004983128
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1642975450171432}
+  m_GameObject: {fileID: 1986332607187850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -0.03, z: -0.09359348}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.69, y: -4.17, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children:
-  - {fileID: 4041845961482872}
+  - {fileID: 4848442327130404}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &82860046322359814
+--- !u!23 &23995133139598226
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1986332607187850}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!82 &82951397573856008
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1620975767484774}
+  m_GameObject: {fileID: 1626125661597438}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: e9aae9b25f8e7004cb73785a4a50f7ac,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 12f37011aefdb604bb89de99e954dc31, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a235d590ef2a04d1b85b61ef4c21337c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -88,8 +124,8 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 125
-  DopplerLevel: 1
+  Priority: 128
+  DopplerLevel: 4.06
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
@@ -151,19 +187,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114405518893186602
+--- !u!114 &114758240610629192
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1642975450171432}
+  m_GameObject: {fileID: 1986332607187850}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29aa98af54fb93f44b14d1d920a8fb75, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f99e8490fbd94a4693cdacc442e8209, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzleGoals: []
-  Solution: 0
-  scoreHolder: {fileID: 0}
-  Complete: {fileID: 0}
-  completeSFX: {fileID: 0}
+  playspace: {fileID: 0}
+  gameStarted: 0
+  failWidget: {fileID: 0}
+  SwitchC: {fileID: 0}
+  levelName: {fileID: 0}
+  tapText: {fileID: 0}
+  scoreText: {fileID: 0}
+  Taps: 2
+  Failsfx: {fileID: 82951397573856008}
+--- !u!114 &114826838232548340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1986332607187850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6866f908700e6314d9757ab2ccbd912e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutTexture: {fileID: 2800000, guid: 6ff93bedc695e2443871626bc6731d73, type: 3}
+  fadeSpeed: 0.8

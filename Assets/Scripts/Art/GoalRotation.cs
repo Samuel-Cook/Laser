@@ -22,6 +22,7 @@ public class GoalRotation : MonoBehaviour
             activated = true;
             goalAnim.SetBool("Inters", true);
 
+
             StartCoroutine("Lightning");
             // particle.Play();
         }

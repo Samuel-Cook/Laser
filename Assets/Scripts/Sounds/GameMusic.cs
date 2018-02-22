@@ -37,7 +37,7 @@ public class GameMusic : MonoBehaviour
         }
         else if (MMuted == true)
         {
-            Music.SetFloat("VolumeM", 0f);
+            Music.SetFloat("VolumeM", -15f);
             MMuted = false;
         }
         

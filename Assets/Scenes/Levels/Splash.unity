@@ -1004,8 +1004,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 372240932}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 170, y: 255, z: 0}
-  m_LocalScale: {x: 0.23611109, y: 0.23611109, z: 0.23611109}
+  m_LocalPosition: {x: 720, y: 1024, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 177914587}
   - {fileID: 711700894}
@@ -1620,7 +1620,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 711700893}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -611.77637, z: 0}
+  m_LocalPosition: {x: 0, y: -611.78796, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1125399979}
@@ -1959,9 +1959,19 @@ Prefab:
       value: 
       objectReference: {fileID: 24300002, guid: e9aae9b25f8e7004cb73785a4a50f7ac,
         type: 2}
+    - target: {fileID: 114543279461294710, guid: 04a7608740129644093866face2867cf,
+        type: 2}
+      propertyPath: Audio
+      value: 
+      objectReference: {fileID: 1461410707}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 04a7608740129644093866face2867cf, type: 2}
   m_IsPrefabParent: 0
+--- !u!82 &1461410707 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82523680114842858, guid: 04a7608740129644093866face2867cf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1439061700}
 --- !u!1 &1463129309
 GameObject:
   m_ObjectHideFlags: 0
@@ -2537,7 +2547,7 @@ MonoBehaviour:
     audioClip: {fileID: 0}
     playOnAwake: 1
     loop: 1
-    volume: 0.5
+    volume: 1
     pitch: 1
     source: {fileID: 0}
   globalVolume: 1
