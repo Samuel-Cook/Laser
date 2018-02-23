@@ -196,7 +196,7 @@ MonoBehaviour:
   levelName: {fileID: 2052770451}
   tapText: {fileID: 1347556220}
   scoreText: {fileID: 430768169}
-  Taps: 15
+  Taps: 8
   Failsfx: {fileID: 1716559804}
 --- !u!114 &49130239
 MonoBehaviour:
