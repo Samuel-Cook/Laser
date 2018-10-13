@@ -818,7 +818,7 @@ Material:
     - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
     - _MKGlowColor: {r: 1, g: 1, b: 1, a: 1}
     - _MKGlowTexColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.97794116, g: 0.54629815, b: 0, a: 1}
+    - _OutlineColor: {r: 0.8718101, g: 0.8877968, b: 0.9191176, a: 1}
     - _UnderlayColor: {r: 0.16235943, g: 0.2077928, b: 0.6691177, a: 1}
 --- !u!28 &28830890617520720
 Texture2D:
@@ -829,6 +829,8 @@ Texture2D:
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
   serializedVersion: 2
   m_Width: 512
   m_Height: 512

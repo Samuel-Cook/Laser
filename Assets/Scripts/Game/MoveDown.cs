@@ -9,7 +9,8 @@ public class MoveDown : MonoBehaviour
     public GameObject scoreHolder;
     public GameObject SwitchC;
     public ParticleSystem effect;
-    public AudioSource Saudio;
+    
+    //public AudioSource Saudio;
 
     // Use this for initialization
     void Start()
@@ -26,7 +27,8 @@ public class MoveDown : MonoBehaviour
 
         effect = this.GetComponent<ParticleSystem>();
 
-        Saudio = this.GetComponent<AudioSource>();
+        //Saudio = this.GetComponent<AudioSource>();
+        
 
         StartCoroutine("FireLaserDown");
     }
@@ -35,7 +37,7 @@ public class MoveDown : MonoBehaviour
     {
         while (Switch.GoDown == true)
         {
-            transform.Translate(0, -Time.deltaTime, 0, Space.Self);
+            transform.Translate(0, -Time.deltaTime * Switch.speed, 0, Space.Self);
 
             yield return null;
         }
@@ -44,8 +46,8 @@ public class MoveDown : MonoBehaviour
     IEnumerator SpawnNewLaserHorizontal()
     {
         {
-            effect.Play();
-            Saudio.Play();
+            //effect.Play();
+            //Saudio.Play();
             Instantiate(laserPrefabHorizontalR, transform.position, transform.rotation);
             Switch.laserCount++;
             Instantiate(laserPrefabHorizontalL, transform.position, transform.rotation);

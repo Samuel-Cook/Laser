@@ -5,17 +5,33 @@ using UnityEngine;
 public class playSpace : MonoBehaviour
 {
     public static bool clicked;
-	// Use this for initialization
-	void Start ()
+    public AudioSource sound;
+    public GameObject scoreHolder;
+    public GameObject SwitchC;
+
+    // Use this for initialization
+    void Start ()
     {
         StartCoroutine("FalseSetter");
-	}
+        sound = this.GetComponent<AudioSource>();
+
+        scoreHolder = GameObject.Find("ScoreManager");
+        ScoreManager t = scoreHolder.GetComponent<ScoreManager>();
+
+        SwitchC = GameObject.Find("SwitchC");
+        Switch s = SwitchC.GetComponent<Switch>();
+    }
 
     // Update is called once per frame
     void OnMouseDown()
     {
-        clicked = true;
-        StartCoroutine("FalseSetter");
+        if (ScoreManager.maxTaps >0)
+        {
+            Switch.speed = Switch.speed += .3f;
+            clicked = true;
+            StartCoroutine("FalseSetter");
+            sound.Play();
+        }
     }
     IEnumerator FalseSetter()
     {

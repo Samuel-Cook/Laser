@@ -16,13 +16,13 @@ public class backround : MonoBehaviour
 
     void Resize()
     {
-        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        BoxCollider2D sr = GetComponent<BoxCollider2D>();
         if (sr == null) return;
 
         transform.localScale = new Vector3(1, 1, 1);
 
-        float width = sr.sprite.bounds.size.x;
-        float height = sr.sprite.bounds.size.y;
+        float width = sr.size.x;
+        float height = sr.size.y;
 
 
         float worldScreenHeight = Camera.main.orthographicSize * 2f;

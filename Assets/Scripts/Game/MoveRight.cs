@@ -10,7 +10,7 @@ public class MoveRight : MonoBehaviour
     public GameObject scoreHolder;
     public bool GoRight;
     public ParticleSystem effect;
-    public AudioSource Saudio;
+   //public AudioSource Saudio;
 
     // Use this for initialization
     void Start()
@@ -28,7 +28,7 @@ public class MoveRight : MonoBehaviour
 
         effect = this.GetComponent<ParticleSystem>();
 
-        Saudio = this.GetComponent<AudioSource>();
+        //Saudio = this.GetComponent<AudioSource>();
 
         StartCoroutine("LaserHorizontal");
 
@@ -37,7 +37,7 @@ public class MoveRight : MonoBehaviour
     {
         while (GoRight == true)
         {
-            transform.Translate(Time.deltaTime, 0, 0, Space.World);
+            transform.Translate(Time.deltaTime * Switch.speed, 0, 0, Space.World);
 
             yield return null;
         }
@@ -45,8 +45,8 @@ public class MoveRight : MonoBehaviour
     IEnumerator SpawnNewLaserVertical()
     {
         {
-            effect.Play();
-            Saudio.Play();
+            //effect.Play();
+            //Saudio.Play();
             Instantiate(laserPrefabVerticalU, transform.position, transform.rotation);
             Switch.laserCount++;
             Instantiate(laserPrefabVerticalD, transform.position, transform.rotation);

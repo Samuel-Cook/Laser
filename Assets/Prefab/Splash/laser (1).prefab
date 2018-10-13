@@ -9,66 +9,66 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1971727792687630}
+  m_RootGameObject: {fileID: 1927558442064164}
   m_IsPrefabParent: 1
---- !u!1 &1971727792687630
+--- !u!1 &1927558442064164
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4566547452120670}
-  - component: {fileID: 96532354222966644}
-  - component: {fileID: 114646133512960010}
-  - component: {fileID: 50267599869471952}
-  - component: {fileID: 61844999675379600}
+  - component: {fileID: 4035014749124338}
+  - component: {fileID: 114693622210032460}
+  - component: {fileID: 96683679396492882}
+  - component: {fileID: 50967521765082968}
+  - component: {fileID: 61040537603904164}
   m_Layer: 0
-  m_Name: Laser Vertical D
+  m_Name: laser (1)
   m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4566547452120670
+--- !u!4 &4035014749124338
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1971727792687630}
+  m_GameObject: {fileID: 1927558442064164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.139214, y: -2.4078517, z: 0.0146484375}
+  m_LocalPosition: {x: 4.91, y: -0.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50267599869471952
+--- !u!50 &50967521765082968
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1971727792687630}
+  m_GameObject: {fileID: 1927558442064164}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
---- !u!61 &61844999675379600
+--- !u!61 &61040537603904164
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1971727792687630}
+  m_GameObject: {fileID: 1927558442064164}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -86,20 +86,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14, y: 0.11}
+  m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
---- !u!96 &96532354222966644
+--- !u!96 &96683679396492882
 TrailRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1971727792687630}
+  m_GameObject: {fileID: 1927558442064164}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_MotionVectors: 2
+  m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
@@ -122,11 +122,11 @@ TrailRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Time: 2
+  m_SortingOrder: 2
+  m_Time: 1000000
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 1
+    widthMultiplier: 2
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -138,12 +138,12 @@ TrailRenderer:
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
-      m_RotationOrder: 0
+      m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
-      key2: {r: 0.8235294, g: 0.11505192, b: 0.11505192, a: 0}
+      key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -151,7 +151,7 @@ TrailRenderer:
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
       ctime1: 65535
-      ctime2: 65535
+      ctime2: 0
       ctime3: 0
       ctime4: 0
       ctime5: 0
@@ -165,29 +165,27 @@ TrailRenderer:
       atime5: 0
       atime6: 0
       atime7: 0
-      m_Mode: 1
+      m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 3
+    textureMode: 2
     generateLightingData: 0
-  m_MinVertexDistance: 0.001
-  m_Autodestruct: 1
---- !u!114 &114646133512960010
+  m_MinVertexDistance: 0.0001
+  m_Autodestruct: 0
+--- !u!114 &114693622210032460
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1971727792687630}
+  m_GameObject: {fileID: 1927558442064164}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3afb4ab3eb42ce5438e0cf1695b483cf, type: 3}
+  m_Script: {fileID: 11500000, guid: fe2dae6226893774b82c29e6a7e97598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserPrefabHorizontalR: {fileID: 0}
-  laserPrefabHorizontalL: {fileID: 0}
-  scoreHolder: {fileID: 0}
-  SwitchC: {fileID: 0}
-  effect: {fileID: 0}
+  waitTimeR: 0
+  waitTimeL: 1
+  wait: 0

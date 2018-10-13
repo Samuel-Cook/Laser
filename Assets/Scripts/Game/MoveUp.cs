@@ -10,7 +10,8 @@ public class MoveUp : MonoBehaviour
     public GameObject scoreHolder;
     public GameObject playspace;
     public ParticleSystem effect;
-    public AudioSource Saudio;
+   
+    //public AudioSource Saudio;
 
     void Start()
     {
@@ -34,9 +35,10 @@ public class MoveUp : MonoBehaviour
 
         effect = this.GetComponent<ParticleSystem>();
 
-        Saudio = this.GetComponent<AudioSource>();
+        //Saudio = this.GetComponent<AudioSource>();
 
         // starts laser movement over time
+        
         StartCoroutine("LaserVertical");
     }
 
@@ -44,7 +46,7 @@ public class MoveUp : MonoBehaviour
     {
         while (Switch.GoUp == true)
         {
-            transform.Translate(0, Time.deltaTime, 0, Space.Self);
+            transform.Translate(0, Time.deltaTime * Switch.speed, 0, Space.World);
 
             yield return null;
         }
@@ -53,8 +55,8 @@ public class MoveUp : MonoBehaviour
     IEnumerator SpawnNewLaserHorizontal()
     {
         {
-            effect.Play();
-            Saudio.Play();
+            //effect.Play();
+            //Saudio.Play();
             Instantiate(laserPrefabHorizontalR, transform.position, transform.rotation);
             Switch.laserCount++;
             Instantiate(laserPrefabHorizontalL, transform.position, transform.rotation);
@@ -68,6 +70,7 @@ public class MoveUp : MonoBehaviour
     {
         {
             Switch.laserCount--;
+            //Destroy.this.GetComponentInParent<AudioSource>();
             Destroy(this);
             yield return null;
         }

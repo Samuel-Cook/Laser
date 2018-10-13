@@ -13,6 +13,7 @@ public class Switch : MonoBehaviour
     public static bool GoLeft;
     public static bool GoDown;
     public static bool score;
+    public static float speed;
 
 
 
@@ -24,6 +25,7 @@ public class Switch : MonoBehaviour
         GoDown = true;
         GoRight = true;
         GoLeft = true;
+        speed = .5f;
     }
     void Update()
     {

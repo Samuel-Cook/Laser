@@ -7,7 +7,7 @@ public class PuzzleSolutions : MonoBehaviour
 {
     public List<GameObject> puzzleGoals = new List<GameObject>();
 
-    public int Solution;    
+    public static int Solution;    
 
     public GameObject scoreHolder;
 
@@ -20,6 +20,7 @@ public class PuzzleSolutions : MonoBehaviour
         scoreHolder = GameObject.Find("ScoreManager");
         ScoreManager t = scoreHolder.GetComponent<ScoreManager>();
         GameObject currentGoal = GameObject.Find("Goal");
+        completeSFX = this.GetComponent<AudioSource>();
         //puzzleGoals.Add(g);
         addGoal(currentGoal);
         checkSolution();
@@ -38,25 +39,31 @@ public class PuzzleSolutions : MonoBehaviour
             }
 
         }
+
     public void checkSolution()
     {
         Solution = puzzleGoals.Count;
     }
+
     public void Update()
     {
         if(ScoreManager.scoreTotal >= Solution)
         {
             Complete.SetBool("Complete", true);
-            StartCoroutine("PauseGame");
+            ScoreManager.gameFinished = true;
+            completeSFX.Play();
+            
+            ScoreManager.maxTaps = 0;
         }
     }
+
     IEnumerator PauseGame()
     {
         {
             //completeSFX.Play();
             yield return new WaitForSeconds(2.2f);
-            completeSFX.Play();
-            //Time.timeScale = 0;
+            
+            Time.timeScale = 0;
         }
         // function in switch script..
     }
