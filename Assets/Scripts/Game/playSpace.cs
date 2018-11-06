@@ -27,7 +27,7 @@ public class playSpace : MonoBehaviour
     {
         if (ScoreManager.maxTaps >0)
         {
-            Switch.speed = Switch.speed += .3f;
+            Switch.speed = Switch.speed += .2f;
             clicked = true;
             StartCoroutine("FalseSetter");
             sound.Play();

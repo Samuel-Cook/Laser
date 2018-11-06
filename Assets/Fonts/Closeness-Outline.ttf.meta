@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: b9bc9273f25a53d46abef59a818edd9b
+timeCreated: 1539535337
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Closeness Outline
+  fontNames:
+  - Closeness Outline
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 32dd8d3307fe6d84b94f85c11675ca7b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

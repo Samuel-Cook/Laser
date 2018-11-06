@@ -133,8 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29aa98af54fb93f44b14d1d920a8fb75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzleGoals:
-  - {fileID: 0}
+  puzzleGoals: []
   scoreHolder: {fileID: 0}
   Complete: {fileID: 0}
   completeSFX: {fileID: 82957062458469472}

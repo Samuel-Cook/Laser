@@ -5,6 +5,11 @@ licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: uiBar_0
+    21300002: uiBar_1
+    21300004: uiBar_2
+    21300006: uiBar_3
+    21300008: uiBar_4
+    21300010: uiBar_5
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -42,12 +47,13 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 32
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -61,29 +67,42 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   - buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -91,22 +110,14 @@ TextureImporter:
       name: uiBar_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 9
-        width: 311
-        height: 136
+        x: 0
+        y: 0
+        width: 328
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -155.5, y: 68}
-        - {x: -155.5, y: -68}
-        - {x: 155.5, y: -68}
-        - {x: 155.5, y: 68}
-      - - {x: -138.5, y: 50}
-        - {x: 138.5, y: 50}
-        - {x: 138.5, y: -50}
-        - {x: -138.5, y: -50}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
     outline: []

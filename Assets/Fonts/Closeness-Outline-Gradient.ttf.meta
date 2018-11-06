@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: af7f7809dba6fa34a9abe05cc3e55275
+timeCreated: 1539535337
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Closeness Outline Gradient
+  fontNames:
+  - Closeness Outline Gradient
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8e5b4f18b6f662f488aa776d61ae0e33, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
